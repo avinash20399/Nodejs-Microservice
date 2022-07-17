@@ -1,0 +1,14 @@
+This is how it's going to be
+Service D will have it's own database and other service whenever some create or update happens, emit an event 
+which this service will take and then perform operation in it's own database, so when this Service D has to provide
+information it can directly look into it's own database
+Problem is paying extra for storage + extra database
+Harder to understand
+what if something fail
+- extremly fast
+- Service D has every thing in it's own database
+- Data duplication
+- we are not recording entire document, but still it's data duplication
+- we are going to focus on this request
+- other services will wait on it
+-  
